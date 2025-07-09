@@ -9,8 +9,31 @@
   <body class="h-[100dvh] grid grid-cols-3 grid-rows-2">
     <aside class="bg-emerald-300 row-span-2 flex flex-col justify-between py-5 px-2">
       <h1 class="text-2xl font-bold px-6 py-2">Calculadora de Investimentos</h1>
-      <form>
-
+      <form class="w-full">
+        <div class="flex w-full flex-col px-6 my-2">
+          <label class="font-bold text-gray-700" for="return-rate">Rentabilidade</label>
+          <div class="flex">
+            <input class="w-1/6 text-center rounded-l-lg"  value="%" type="text" disabled>
+            <input class="w-1/2" type="text" id="return-rate">
+            <!-- <input class="w-1/3" type="text" value="mensal"> -->
+            <select class="w-1/3 rounded-r-lg text-center border-l-2 border-emerald-600 hover:bg-emerald-950 hover:text-slate-200" id="evaluation-period">
+              <option value="monthly">Mensal</option>
+              <option value="yearly">Anual</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex w-full flex-col px-6 my-2">
+          <label class="font-bold text-gray-700" for="return-rate">Imposto sobre o lucro</label>
+          <div class="flex">
+            <input class="w-1/6 text-center rounded-l-lg"  value="%" type="text" disabled>
+            <input class="w-1/2" type="text" id="return-rate">
+            <!-- <input class="w-1/3" type="text" value="mensal"> -->
+            <select class="w-1/3 rounded-r-lg text-center border-l-2 border-emerald-600 hover:bg-emerald-950 hover:text-slate-200" id="evaluation-period">
+              <option value="monthly">Mensal</option>
+              <option value="yearly">Anual</option>
+            </select>
+          </div>
+        </div>
       </form>
       <div>
         <button>Calcular</button>
